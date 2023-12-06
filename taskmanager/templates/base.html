@@ -10,6 +10,27 @@
     <title>Task Manager</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="light-blue darken-1">
+              <a href="#!" class="brand-logo">Task Manager</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('add') }}">Add Task</a></li>
+                <li><a href="{{ url_for('edit') }}">Edit Task</a></li>
+                <li><a href="{{ url_for('delete') }}">Delete Task</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('add') }}">Add Task</a></li>
+            <li><a href="{{ url_for('edit') }}">Edit Task</a></li>
+            <li><a href="{{ url_for('delete') }}">Delete Task</a></li>
+          </ul>
+    </header>
 
     Hello World! 
     
